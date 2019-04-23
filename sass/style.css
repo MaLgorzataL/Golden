@@ -1,0 +1,763 @@
+/* General style  */
+
+.background {
+    width: 100%;
+    height: 5850px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 607px;
+    left: 11.84%;
+}
+
+/*Style for section Home */
+
+.home {
+    width: 100%;
+    height: 781px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.tint {
+    width: 80%;
+    height: 81.5%;
+    background-color: #000000;
+    opacity: 0.5;
+    margin-left: 11.84%;
+    margin-top: 9.5%;
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 11.84%;
+    top: 19%;
+}
+
+.welcome {
+    height: 32px;
+    color: #ffffff;
+    font-family: "Droid Serif";
+    font-size: 2.2em;
+    font-style: italic;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 40%;
+    top: 52%;
+    opacity: 1;
+}
+
+.nice {
+    height: 55px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 3.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1.88px;
+    position: absolute;
+    left: 27.5%;
+    top: 60%;
+}
+
+button {
+    width: 13%;
+    height: 8.26%;
+    background-color: #fed136;;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 74.8%;
+    left: 45.5%;
+}
+
+/*Style for section Header */
+
+.header {
+    width: 933px;
+    height: 28px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.logo {
+   height: 28px;
+   color: #fed136;
+   font-family: "Wisdom-Script";
+   font-size: 1.8em;
+   font-weight: 400;
+   line-height: 2.5em;
+   letter-spacing: 1.3px;
+   position: absolute;
+   left: 23%;
+   top: 23%;
+   opacity: 1;
+}
+
+ul {
+    list-style-type: none; 
+    position: absolute;
+    left: 47%;
+    top: 25%;
+}
+
+li {
+   display: inline-block;
+   list-style-type: none;
+   padding: 0 20px;
+}
+
+a {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu {
+    height: 10px;  
+}
+
+
+/*Style for section Services */
+
+.services {
+    width: 934px;
+    height: 330px;
+    position: absolute;
+    left: 233px;
+    top: 650px;
+    background-image: #ffffff;
+    text-align: center;
+}
+
+.title-Services {
+    height: 30px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 44.5%;
+    top: 760px;
+}
+
+.sub-Title {
+    width: 296px;
+    height: 17px;
+    color: #777777;
+    font-family: "Droid Serif";
+    font-size: 1.15em;
+    font-style: italic;
+    position: absolute;
+    left: 41%;
+    top: 830px;
+}
+
+/* Grid */
+
+.row {
+	font-size: 25px;
+}
+.row::before,
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px; 
+}
+.col-1 {
+	width:8.33%;
+}
+.col-2 {
+	width: 16.66%;	
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;	
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;	
+}
+.col-11 {
+	width: 91.66%;	
+}
+.col-12 {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+.col-offset-0 {
+	margin-left: 0;	
+}
+.col-offset-1 {
+	margin-left: 8.33%;	
+}
+.col-offset-2 {
+	margin-left: 16.66%;
+}
+.col-offset-3 {
+	margin-left: 25%;
+}
+.col-offset-4 {
+	margin-left: 33.33%;
+}
+.col-offset-5 {
+	margin-left: 41.66%;
+}
+.col-offset-6 {
+	margin-left: 50%;
+}
+.col-offset-7 {
+	margin-left: 58.33%;
+}
+.col-offset-8 {
+	margin-left: 66.66%;
+}
+.col-offset-9 {
+	margin-left: 75%;
+}
+.col-offset-10 {
+	margin-left: 83.33%;
+}
+.col-offset-11 {
+	margin-left: 91.66%;
+}
+
+.row-Serwices {
+    height: 184px;
+    position: absolute;
+    left: 0px;
+    top: 920px;
+    text-align: center;
+}
+
+[class*="icon-"] i {
+    font-size: 40px;
+    color: #fed136; 
+}
+
+.icon-basket {
+    position: absolute;
+    left: 350px;
+    top: 940px;
+}
+
+.circle-1 {
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 336px;
+    top: 926px;
+}
+
+.title-Icon-1 {
+    height: 14px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -0.45px;
+    position: absolute;
+    left: 313px;
+    top: 1001px;
+}
+
+.description-Icon-1 {
+    width: 274px;
+    height: 57px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    position: absolute;
+    left: 233px;
+    top: 1053px;
+    text-align: center;
+}
+
+.icon-laptop {
+    position: absolute;
+    left: 678px;
+    top: 940px;
+}
+
+.circle-2 {
+    width: 67px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 666px;
+    top: 926px;
+}
+
+.title-Icon-2 {
+    height: 18px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -0.45px;
+    position: absolute;
+    left: 633px;
+    top: 1001px;
+    text-align: center;
+}
+
+.description-Icon-2 {
+    width: 274px;
+    height: 57px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    position: absolute;
+    left: 563px;
+    top: 1053px;
+    text-align: center;
+}
+
+.icon-locked {
+    position: absolute;
+    left: 1015px;
+    top: 940px;
+}
+
+.circle-3 {
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 996px;
+    top: 926px;
+}
+
+.title-Icon-3 {
+    height: 18px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -0.45px;
+    position: absolute;
+    left: 971px;
+    top: 1001px;
+}
+
+.description-Icon-3 {
+    width: 274px;
+    height: 57px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    position: absolute;
+    left: 893px;
+    top: 1053px;
+    text-align: center;
+}
+
+/*Style for section Portfolio */
+
+.portfolio {
+    width: 100%;
+    height: 1218px;
+    position: absolute;
+    left: 0px;
+    top: 1268px;
+}
+
+.title-Services-Portfolio {
+    height: 30px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 40%;
+    top: 1227px;
+}
+
+.sub-Title-Portfolio {
+    width: 296px;
+    height: 17px;
+    color: #777777;
+    font-family: "Droid Serif";
+    font-size: 1.1em;
+    font-style: italic;
+    position: absolute;
+    left: 41%;
+    top: 1287px;
+}
+
+.row-Portfolio {
+    width: 60%;
+    height: 39%;
+    margin: 0 auto;
+}
+
+.row-Portfolio img {
+    width: 19%;
+    height: 43%;
+}
+
+.row-Portfolio div {
+    width: 16.5%;
+    height: 7%;
+    background-color: white;
+    border: 1px solid silver;
+    text-align: center;
+    padding: 15px;
+}
+
+.row-Portfolio .image1 {
+    position: absolute;
+    top: 1370px;
+    left: 20%;
+}
+
+.figcaption1 {
+    position: absolute;
+    left: 20.1%;
+    top: 1630px;
+}
+
+.row-Portfolio .image2 {
+    position: absolute;
+    top: 1370px;
+    left: 41%;
+}
+
+.figcaption2 {
+    position: absolute;
+    left: 41.1%;
+    top: 1630px;
+}
+
+.row-Portfolio .image3 {
+    position: absolute;
+    top: 1370px;
+    left: 62%;
+}
+
+.figcaption3 {
+    position: absolute;
+    left: 62.1%;
+    top: 1630px;
+}
+
+.row-Portfolio .image4 {
+    position: absolute;
+    top: 1752px;
+    left: 20%;
+}
+
+.figcaption4 {
+    position: absolute;
+    left: 20.1%;
+    top: 2012px;
+}
+
+.row-Portfolio .image5 {
+    position: absolute;
+    top: 1752px;
+    left: 41%;
+}
+
+.figcaption5 {
+    position: absolute;
+    left: 41.1%;
+    top: 2012px;
+}
+
+.row-Portfolio .image6 {
+    position: absolute;
+    top: 1752px;
+    left: 62%;
+}
+
+.figcaption6 {
+    position: absolute;
+    left: 62.1%;
+    top: 2012px;
+}
+
+/*Style for section About Us */
+
+.aboutUs {
+    width: 100%;
+    height: 1426px;
+    position: absolute;
+    left: 0px;
+    top: 2100px;
+    background-color: yellow;
+}
+
+.title-Services-aboutUs {
+    height: 30px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 43%;
+    top: 2200px;
+}
+
+.sub-Title-aboutUs {
+    width: 296px;
+    height: 17px;
+    color: #777777;
+    font-family: "Droid Serif";
+    font-size: 1.1em;
+    font-style: italic;
+    position: absolute;
+    left: 39.66%;
+    top: 2270px;
+}
+
+.row1-aboutUs {
+    width: 874px;
+    height: 175px;
+    margin: 45px;
+    position: absolute;
+    top: 2320px;
+    left: 17.44%;
+}
+
+.row2-aboutUs {
+    width: 874px;
+    height: 175px;
+    margin: 45px;
+    position: absolute;
+    top: 2495px;
+    left: 17.44%;
+}
+
+.row3-aboutUs {
+    width: 874px;
+    height: 175px;
+    margin: 45px;
+    position: absolute;
+    top: 2670px;
+    left: 17.44%;
+}
+
+.row4-aboutUs {
+    width: 874px;
+    height: 175px;
+    margin: 45px;
+    position: absolute;
+    top: 2845px;
+    left: 17.44%;
+}
+
+.row5-aboutUs {
+    width: 874px;
+    height: 175px;
+    margin: 45px;
+    position: absolute;
+    top: 3020px;
+    left: 17.44%;
+}
+
+.col-1-about {
+    width: 35%;
+    text-align: right;
+    font-size: 1em;
+}
+
+.col-2-about {
+    width: 29.17%;
+    text-align: center;
+}
+
+.col-2-about img {
+    width: 90%;
+    height: 90%;
+    border: 2px solid silver;
+    border-radius: 50%;
+}
+
+.col-3-about {
+    width: 34.83%;
+    text-align: left;
+}
+
+.circle-About {
+    width: 35%;
+    height: 90px;
+    border: 2px solid silver;
+    background-color: #fed136;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px auto 0;
+}
+
+/*Style for section Our Amazing Team */
+
+.ourAmazingTeam {
+    width: 100%;
+    height: 818px;
+    position: absolute;
+    left: -1px;
+    top: 4152px;
+}
+
+/*Style for section Logos */
+
+.logos {
+    width: 765px;
+    height: 43px;
+    position: absolute;
+    left: 316px;
+    top: 5030px;
+}
+
+/*Style for section Contact */
+
+.contactUs {
+    width: 100%;
+    height: 840px;
+    position: absolute;
+    left: -2px;
+    top: 5134px;
+}
+
+/*Style for section  Bottom Footer*/
+
+.bottomFooter {
+    width: 100%;
+    height: 40px;
+    
+    text-align: center;
+}
+
+.row-Social {
+    width: 565px;
+    height: 40px;
+
+    margin: 0 auto;
+}
+
+.row-Social .col-6 {    /* Stylowanie napisu */
+    height: 14px;
+    color: #555555;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.35px;
+    text-align: left;
+}
+
+.row-Social .col-5 {    /* Stylowanie ikon*/
+    text-align: right;
+    display: inline-block;
+}
+
+.twitter, .facebook, .pinterest {
+    width: 41px;
+    height: 40px;
+    background-color: #222222;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.twitter:hover {
+
+}
+
+.facebook {
+
+}
+
+.facebook:hover {
+
+}
+
+.pinterest {
+
+}
+
+.pinterest:hover {
+
+}
+
+.google {
+    width: 41px;
+    height: 40px;
+    background-color: #222222;
+    border-radius: 50%;
+}
+
+.google:hover {
+
+}
+
+.row-Social .col-5 i {
+    height: 16px;
+    background-color: #ffffff;
+    margin: 12px 19px;
+}
+
