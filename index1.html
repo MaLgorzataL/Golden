@@ -3,43 +3,48 @@
 	<head>
   		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Landing page</title>
-		<link rel="stylesheet" href="https://use.typekit.net/lmm8fjs.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab" rel="stylesheet">
-		<link href="//db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" type="text/css" href="vendor/Normalize.css">
     	<link rel="stylesheet" type="text/css" href="sass/style.css">
   	</head>
   	<body>
-		<section id="Home" class=”home”>
-			<div class="container"> 
-				<img src="https://cdn.pixabay.com/photo/2014/05/03/00/46/gadgets-336635__340.jpg" alt="Akcesoria" class="image">
-				<div class="tint"> </div>
-				<div class="welcome">Welcome To Our Studio!</div>
-				<div class="nice">It's nice to Meet you</div>
-				<button class="button">TELL ME MORE</button>
+		<section id="Home" class="home">
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-3 logo">
+							<a href="#"><img src="./png/logo.png"></a>
+						</div>
+						<div class="col-9 menu">
+							<ul>
+							  <li><a href="#">Home</a></li>
+							  <li><a href="#">Services</a></li>
+							  <li><a href="#">Portfolio</a></li>
+							  <li><a href="#">About</a></li>
+							  <li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h4 class="welcome">Welcome To Our Studio!</h4>
+					<h2 class="nice">It's nice to meet you</h2><br><br>
+					<a href="#" class="button">Tell me more</a>
+				</div>
 			</div>
 		</section>
-		<section class=”header”>
-			<div class="logo">Golden</div>
-			<div class="menu">
-				<ul>
-					<li><a href="#Home">Home</a></li>
-					<li><a href="#Services">Services</a></li>
-					<li><a href="#Portfolio">Portfolio</a></li>
-					<li><a href="#About">About</a></li>	
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</div>	
-		</section>
-		<section id="Services" class=”services”> 
-			<div class="background"> </div>
-			<div class="title-Services">SERVICES</div>	
-			<div class="sub-Title">
+		
+		<section id="Services" class=”services”>
+			<h1>SERVICES</h1>
+			<h6>
 				Proin iaculis purus consequat sem cure.
-			</div>
+			</h6>
 			<div class="row-Services">
 				<div class="col-4">
 					<div class="circle-1"> </div>
@@ -88,38 +93,95 @@
 			</div>
 			<div class="row-Portfolio">
 				<img class="image1" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Klawiatura">
+				<div class="figcaption1">Ebony & Ivory
+					<br>Branding
+				</div>
+				<img class="image2" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Biurko">
+				<div class="figcaption2">Smart Stationary
+					<br>Print Design
+				</div>
+				<img class="image3" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Tablica">
+				<div class="figcaption3">Clever Poster
+					<br>Print Design
+				</div>
+			</div>
+			<div class="row-Portfolio">
+				<img class="image4" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Plyta">
+				<div class="figcaption4">Vinyl Record
+					<br>Product Mock-Up
+				</div>
+				<img class="image5" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Informacje">
+				<div class="figcaption5">Treehouse Template
+					<br>Web Design
+				</div>
+				<img class="image6" src="https://cdn.pixabay.com/photo/2017/07/28/04/14/keyboard-2547596__340.jpg" alt="Beczka">
+				<div class="figcaption6">Burned Logo
+					<br>Branding
+				</div>
 			</div>
 		</section>
 		<section id="About" class=”aboutUs”> 
-			<div class="row">
-				<div class="col-4">Lorem ipsum dolor sit amet
+			<div class="title-Services-aboutUs">
+				About us
+			</div>	
+			<div class="sub-Title-aboutUs">
+				Proin iaculis purus consequat sem cure.
+			</div>
+			<div class="row1-aboutUs">
+				<div class="col-1-about">
+					JULY 2010 <br>
+					Our Humble Beginnings <br>
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
 				</div>
-				<div class="col-6">Lorem ipsum dolor sit amet
+				<div class="col-2-about">
+					<img src="https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634__340.jpg" alt="Biurko">
+				</div>
+				<div class="col-3-about"> </div>
+			</div>
+			<div class="row2-aboutUs">
+				<div class="col-1-about"> </div>
+				<div class="col-2-about">
+					<img src="https://cdn.pixabay.com/photo/2016/11/02/06/17/beautiful-1790701__340.jpg" alt="Biurko">
+				</div>
+				<div class="col-3-about">
+					JANUARY 2011 <br>
+					Facing Startup Battles <br>
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-4">Lorem ipsum dolor sit amet
+			<div class="row3-aboutUs">
+				<div class="col-1-about">
+					DECEMBER 2012 <br>
+					Enter The Dark Days <br>
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					Proin iaculis purus consequat sem cure digni. 
 				</div>
-				<div class="col-6">Lorem ipsum dolor sit amet
+				<div class="col-2-about">
+					<img src="https://cdn.pixabay.com/photo/2017/08/10/03/47/guy-2617866__340.jpg" alt="B">
+				</div>
+				<div class="col-3-about"> </div>
+			</div>
+			<div class="row4-aboutUs">
+				<div class="col-1-about"> </div>
+				<div class="col-2-about">
+					<img src="https://cdn.pixabay.com/photo/2018/06/06/06/36/visitalmaty-3457164__340.jpg" alt="Biurko">
+				</div>
+				<div class="col-3-about">
+					FEBRUARY 2014 <br>
+					Our Triumph <br>
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-4">Lorem ipsum dolor sit amet
+			<div class="row5-aboutUs">
+				<div class="col-1-about"> </div>
+				<div class="col-2-about">
+					<div class="circle-About">
+						OUR <br> STORY CONTINUES ... </div>
 				</div>
-				<div class="col-6">Lorem ipsum dolor sit amet
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-4">Lorem ipsum dolor sit amet
-				</div>
-				<div class="col-6">Lorem ipsum dolor sit amet
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-4">Lorem ipsum dolor sit amet
-				</div>
-				<div class="col-6">Lorem ipsum dolor sit amet
-				</div>
+				<div class="col-3-about"> </div>
 			</div>
 		</section>
 		<section class=”ourAmazingTeam”> 
