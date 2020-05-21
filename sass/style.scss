@@ -4132,6 +4132,7 @@
 
   /* Kolory*/
   $kolor-tekstu: #ffffff;
+  $kolor-obwodu-kola: #f1f1f1;
   $kolor-przycisku: #fed136;
   $kolor-tytulu-sekcji: #222222;
   $kolor-tekstu-sekcji: #777777;
@@ -4255,20 +4256,8 @@
   
 /*Style for section Services */
 
-.services {
-    max-width: 934px;
-    height: 330px;
-    margin-top: 500px;
-    background-color: $kolor-tekstu;
-    .row {
-      width: 80%;
-      margin: 0 auto;
-      border: solid 1px gray;
-      background-color: blueviolet;
-    }
-}
-h1 { 
-    height: 40px;
+h1 {  /* Wspólne style dla tytułów sekcji i tytułu Service*/
+
     margin: 150px auto 0 auto;
     color: $kolor-tytulu-sekcji;
     font-family: $nice-button;
@@ -4280,32 +4269,40 @@ h1 {
     text-align: center;
 }
 
-h6 {
-    height: 17px;
-    margin: 30px auto 70px auto;
+h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
+    margin: -10px auto 70px auto;
     color: $kolor-tekstu-sekcji;
     font-family: $tekst-sekcji;
-    font-size: 18px;
+    font-size: 16px;
+    height: 17px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
 }
 
-.circle {
+.row {
+    width: 73%;
+    margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+}
+
+.icon-box { /* kólko */
   width: 68px;
   height: 67px;
   border: 3px solid $kolor-przycisku;
   @include border-radius(50%);
   background-color: $kolor-tekstu;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-.circle i {
-  font-size: 40px;
+.icon-box i { /* ikona */
+  font-size: 38px;
   color: $kolor-przycisku; 
   text-align: center;
-  margin: 12px auto;
-  margin-left: 8px;
+  margin: 9px;
 }
 
 .title-Icon {
@@ -4317,7 +4314,7 @@ h6 {
     line-height: 75px;
     letter-spacing: -0.45px;
     text-align: center;
-    margin-top: -32px;
+    margin-top: -12px;
 }
 
 .description-Icon {
@@ -4330,159 +4327,117 @@ h6 {
     font-weight: 100;
     letter-spacing: -0.35px;
     text-align: center;
-    margin: 70px 5px 50px 5px;
+    margin: 45px auto;
 }
 /*Style for section Portfolio */
 
 .portfolio {
-    width: 100%;
-    max-width: 1557px;
+    max-width: 1557px; 
+    width: 62%;
+    height: 680px;
+    margin: 150px auto;
+    background-color: #f7f7f7;
+    h1 {
+      margin: 50px auto -50px auto;
+      padding-top: 40px;
+      font-size: 21px;
+    }
+    h6 {
+      font-size: 10px;
+      margin: 30px auto;
+    }
     .row {
-      width: 60%;
-      height: 39%;
-      margin: 0 auto;
-      background-color: whitesmoke;
-      img {
-        width: 150px;
-        height: auto;
-        display: inline-block;
+      width: 64%;
+      margin: 40px auto -30px auto;
+      padding: 0px;
+      .portfolio-image {
+        .figcaption {
+          background-color: white;
+          width: 160px;
+          height: 50px;
+          margin-top: -5px;
+          line-height: 40px;
+          font-weight: 700;
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 12px;
+          font-family: $nice-button;
+          .second-line {
+            font-size: 8px;
+            font-family: $tekst-sekcji;
+            font-style: italic;
+            font-weight: 50;
+            margin-top: -27px;
+          }
+        }
+        img {
+          width: 160px;
+          height: 168px;
+        }
       }
     }
 }
 
-
-/*.row-Portfolio div {
-    width: 16.5%;
-    height: 7%;
-    background-color: $kolor-tekstu;
-    border: 1px solid silver;
-    text-align: center;
-    padding: 15px;
-}*/
-
-.row-Portfolio .image1 {
-    
-}
-
-.figcaption1 {
-    
-}
-
-.row-Portfolio .image2 {
-    }
-
-.figcaption2 {
-    
-}
-
-.row-Portfolio .image3 {
-    
-}
-
-.figcaption3 {
-    
-}
-
-.row-Portfolio .image4 {
-    
-}
-
-.figcaption4 {
-    
-}
-
-.row-Portfolio .image5 {
-    
-}
-
-.figcaption5 {
-    
-}
-
-.row-Portfolio .image6 {
-    
-}
-
-.figcaption6 {
-    
-}
-
 /*Style for section About Us */
+
+.left { 
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
 
 .aboutUs {
     width: 100%;
+    max-width: 874px;
     height: 1426px;
-    background-color: $kolor-przycisku;
+    margin: -150px auto 150px auto;
+    .row {
+      margin-bottom: 17px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 10px;
+      margin: -25px auto 25px auto;
+    }
+    .col-5 {
+      h2 {
+        font-family: $nice-button;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 5px auto -3px auto;
+        .second-line {
+          font-size: 9px;
+        }
+      }
+      p {
+        font-family: $opis-ikony;
+        font-weight: 400;
+        font-size: 10px;
+      }
+    }
+    .col-2 {
+      h1 {
+        font-size: 9px;
+        font-weight: 900;
+        line-height: 12px;
+        margin: 20px auto;
+        color: $kolor-tekstu;
+      }
+    }
 }
 
-.row1-aboutUs {
-    width: 874px;
-    height: 175px;
-    margin: 45px;
-    
-}
-
-.row2-aboutUs {
-    width: 874px;
-    height: 175px;
-    margin: 45px;
-    
-}
-
-.row3-aboutUs {
-    width: 874px;
-    height: 175px;
-    margin: 45px;
-    
-}
-
-.row4-aboutUs {
-    width: 874px;
-    height: 175px;
-    margin: 45px;
-    
-}
-
-.row5-aboutUs {
-    width: 874px;
-    height: 175px;
-    margin: 45px;
-    
-}
-
-.col-1-about {
-    width: 35%;
-    text-align: right;
-    font-size: 1em;
-}
-
-.col-2-about {
-    width: 29.17%;
-    text-align: center;
-}
-
-.col-2-about img {
-    width: 150px;
-    height: 150px;
-    border: 2px solid silver;
-    border-radius: 50%;
-}
-
-.col-3-about {
-    width: 34.83%;
-    text-align: left;
-}
-
-.circle-About {
-    width: 150px;
-    height: 150px;
-    border: 2px solid silver;
+.circle-about {
+    width: 85px;
+    height: 85px;
+    border: 2px solid $kolor-obwodu-kola;
     background-color: $kolor-przycisku;
     color: $kolor-tekstu;
     text-align: center;
     border-radius: 50%;
-    padding: 15px;
-    margin: 10px auto 0;
+    margin: 5px auto;
 }
 
 /*Style for section Our Amazing Team */
@@ -4583,4 +4538,3 @@ h6 {
     background-color: $kolor-tekstu;
     margin: 12px 19px;
 }
-
