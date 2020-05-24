@@ -3707,11 +3707,15 @@ h6 {
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
 .aboutUs {
   width: 100%;
   max-width: 874px;
-  height: 1426px;
-  margin: -150px auto 150px auto;
+  height: 600px;
+  margin: -150px auto 100px auto;
 }
 
 .aboutUs .row {
@@ -3732,6 +3736,10 @@ h6 {
   font-size: 10px;
   font-weight: 700;
   margin: 5px auto -3px auto;
+}
+
+.aboutUs .col-5 h2 span {
+  display: block;
 }
 
 .aboutUs .col-5 h2 .second-line {
@@ -3765,20 +3773,181 @@ h6 {
 
 /*Style for section Our Amazing Team */
 .ourAmazingTeam {
-  width: 100%;
-  height: 818px;
+  width: 83%;
+  max-width: 1401px;
+  height: 650px;
+  margin: -10px auto;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.ourAmazingTeam h1 {
+  font-size: 31px;
+  margin: 55px auto;
+}
+
+.ourAmazingTeam h6 {
+  font-size: 15px;
+  margin: -65px auto 65px auto;
+}
+
+.ourAmazingTeam .row {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.ourAmazingTeam .row .circle-team {
+  width: 190px;
+  height: 190px;
+  margin-left: 3px;
+  border: solid 7px #ffffff;
+  border-radius: 50%;
+  background-color: #111111;
+}
+
+.ourAmazingTeam .row h1 {
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0px auto;
+}
+
+.ourAmazingTeam .row h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: -5px auto 10px auto;
+}
+
+.ourAmazingTeam .row a {
+  width: 20px;
+  height: 16px;
+  color: #222222;
+}
+
+.ourAmazingTeam .row .twitter, .ourAmazingTeam .row .facebook, .ourAmazingTeam .row .pinterest, .ourAmazingTeam .row .google {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: -3px;
+  margin-left: -8px;
+  padding: 0 10px;
+  background-image: linear-gradient(to bottom right, #f9f9f9, #f9f9f9, #f9f9f9, #222222, #222222, #111111);
+  border-radius: 50%;
+}
+
+.ourAmazingTeam .row .twitter:hover, .ourAmazingTeam .row .facebook:hover, .ourAmazingTeam .row .pinterest:hover, .ourAmazingTeam .row .google:hover {
+  color: #ffffff;
+  background-image: none;
+}
+
+.ourAmazingTeam .row .twitter i, .ourAmazingTeam .row .google i {
+  margin-left: -2px;
+}
+
+.ourAmazingTeam .row .twitter:hover {
+  background-color: #00aced;
+}
+
+.ourAmazingTeam .row .facebook:hover {
+  background-color: #3b5998;
+}
+
+.ourAmazingTeam .row .pinterest:hover {
+  background-color: #cb2028;
+}
+
+.ourAmazingTeam .row .google:hover {
+  background-color: #d95232;
+}
+
+.ourAmazingTeam .row .col-5 .facebook {
+  margin-left: 10px;
+}
+
+.ourAmazingTeam .row .col-5 .pinterest {
+  margin-left: -1px;
+}
+
+.ourAmazingTeam p {
+  width: 77%;
+  margin: 40px auto;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
 }
 
 /*Style for section Logos */
 .logos {
   width: 765px;
   height: 43px;
+  margin: 330px auto 355px auto;
+}
+
+.logos img {
+  height: auto;
+}
+
+.logos .logo1 {
+  width: 165px;
+  margin: -59px 10px 50px -120px;
+  opacity: 0.6;
+}
+
+.logos .logo2 {
+  width: 186px;
+  margin: -5px 5px 40px -70px;
+  opacity: 0.3;
+}
+
+.logos .logo3 {
+  width: 131px;
+  margin: 5px 0;
+  opacity: 0.3;
+}
+
+.logos .logo4 {
+  width: 167px;
+  margin: 5px 35px;
+  opacity: 0.4;
 }
 
 /*Style for section Contact */
 .contactUs {
+  width: 60%;
+  margin: 30px 37.75% 170px 2.25%;
+  height: 390px;
+  background-image: url("https://cdn.pixabay.com/photo/2013/06/20/13/52/nasa-140304_960_720.jpg");
+  opacity: 0.9;
+}
+
+.contactUs .tint {
   width: 100%;
-  height: 840px;
+  height: 390px;
+  margin-top: -30px;
+  background-color: #111111;
+  opacity: 0.9;
+}
+
+.contactUs h1 {
+  padding-top: 35px;
+  color: #ffffff;
+  background-image: none;
+  background-color: transparent;
+  font-size: 24px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.contactUs h6 {
+  margin-top: -16px;
+  font-size: 10px;
+}
+
+.contactUs .row {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /*Style for section  Bottom Footer*/

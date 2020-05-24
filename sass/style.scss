@@ -4136,6 +4136,14 @@
   $kolor-przycisku: #fed136;
   $kolor-tytulu-sekcji: #222222;
   $kolor-tekstu-sekcji: #777777;
+  $background-color-portfolio: #f7f7f7;
+  $background-color-team: #f9f9f9;
+  $background-color-circle-team: #111111;
+  $background-twitter-hover: #00aced;
+  $background-facebook-hover: #3b5998;
+  $background-pinterest-hover: #cb2028;
+  $background-google-hover: #d95232;
+
 
   /* Czcionki*/
   $nice-button: "Montserrat", sans-serif;
@@ -4332,50 +4340,50 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 /*Style for section Portfolio */
 
 .portfolio {
-    max-width: 1557px; 
-    width: 62%;
-    height: 680px;
-    margin: 150px auto;
-    background-color: #f7f7f7;
-    h1 {
-      margin: 50px auto -50px auto;
-      padding-top: 40px;
-      font-size: 21px;
-    }
-    h6 {
-      font-size: 10px;
-      margin: 30px auto;
-    }
-    .row {
-      width: 64%;
-      margin: 40px auto -30px auto;
-      padding: 0px;
-      .portfolio-image {
-        .figcaption {
-          background-color: white;
-          width: 160px;
-          height: 50px;
-          margin-top: -5px;
-          line-height: 40px;
-          font-weight: 700;
-          margin-bottom: 15px;
-          text-align: center;
-          font-size: 12px;
-          font-family: $nice-button;
-          .second-line {
-            font-size: 8px;
-            font-family: $tekst-sekcji;
-            font-style: italic;
-            font-weight: 50;
-            margin-top: -27px;
-          }
-        }
-        img {
-          width: 160px;
-          height: 168px;
+  max-width: 1557px; 
+  width: 62%;
+  height: 680px;
+  margin: 150px auto;
+  background-color: $background-color-portfolio;
+  h1 {
+    margin: 50px auto -50px auto;
+    padding-top: 40px;
+    font-size: 21px;
+  }
+  h6 {
+    font-size: 10px;
+    margin: 30px auto;
+  }
+  .row {
+    width: 64%;
+    margin: 40px auto -30px auto;
+    padding: 0px;
+    .portfolio-image {
+      .figcaption {
+        background-color: white;
+        width: 160px;
+        height: 50px;
+        margin-top: -5px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 12px;
+        font-family: $nice-button;
+        .second-line {
+          font-size: 8px;
+          font-family: $tekst-sekcji;
+          font-style: italic;
+          font-weight: 50;
+          margin-top: -27px;
         }
       }
+      img {
+        width: 160px;
+        height: 168px;
+      }
     }
+  }
 }
 
 /*Style for section About Us */
@@ -4387,11 +4395,15 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
 .aboutUs {
     width: 100%;
     max-width: 874px;
-    height: 1426px;
-    margin: -150px auto 150px auto;
+    height: 600px;
+    margin: -150px auto 100px auto;
     .row {
       margin-bottom: 17px;
     }
@@ -4408,6 +4420,9 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
         font-size: 10px;
         font-weight: 700;
         margin: 5px auto -3px auto;
+        span {
+          display: block;
+        }
         .second-line {
           font-size: 9px;
         }
@@ -4443,9 +4458,92 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 /*Style for section Our Amazing Team */
 
 .ourAmazingTeam {
-    width: 100%;
-    height: 818px;
-    
+  width: 83%;
+  max-width: 1401px;
+  height: 650px; 
+  margin: -10px auto;
+  padding: 10px 0;
+  background-color: $background-color-team;
+  h1 {
+    font-size: 31px;
+    margin: 55px auto;
+  }  
+  h6 {
+    font-size: 15px;
+    margin: -65px auto 65px auto;
+  } 
+  .row {
+    width: 60%;
+    margin: 0px auto;
+    .circle-team {
+      width: 190px;
+      height: 190px;
+      margin-left: 3px;
+      border: solid 7px $kolor-tekstu;
+      border-radius: 50%;
+      background-color: $background-color-circle-team; 
+    }
+    h1 {
+      font-size: 12px;
+      line-height: 30px;
+      margin: 0px auto;
+    }
+    h6 {
+      font-size: 14px;
+      font-weight: 400;
+      margin: -5px auto 10px auto;
+    }
+    a {
+      width: 20px;
+      height: 16px;
+      color: $kolor-tytulu-sekcji;
+    }
+    .twitter, .facebook, .pinterest, .google {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: -3px;
+      margin-left: -8px;
+      padding: 0 10px;
+      background-image: linear-gradient(to bottom right,$background-color-team,$background-color-team,$background-color-team,$kolor-tytulu-sekcji,$kolor-tytulu-sekcji,$background-color-circle-team);
+      border-radius: 50%;
+      &:hover {
+        color: $kolor-tekstu;
+        background-image: none;
+      }
+    }
+    .twitter i, .google i {
+      margin-left: -2px;
+    }
+    .twitter:hover {
+      background-color: $background-twitter-hover;
+    }
+    .facebook:hover {
+      background-color:$background-facebook-hover;
+    }
+    .pinterest:hover {
+      background-color: $background-pinterest-hover;
+    }
+    .google:hover {
+      background-color: $background-google-hover;
+    }
+    .col-5 .facebook {
+      margin-left: 10px;
+    }
+    .col-5 .pinterest {
+      margin-left: -1px;
+    }
+  } 
+  p {
+    width: 77%;
+    margin: 40px auto;
+    color: $kolor-tekstu-sekcji;
+    font-family: $opis-ikony;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+  }
 }
 
 /*Style for section Logos */
@@ -4453,15 +4551,64 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 .logos {
     width: 765px;
     height: 43px;
-    
+    margin: 330px auto 355px auto; 
+    img {
+      height: auto;
+    }
+    .logo1 {
+      width: 165px;
+      margin: -59px 10px 50px -120px;
+      opacity: 0.6;
+    }
+    .logo2 {
+      width: 186px;
+      margin: -5px 5px 40px -70px;
+      opacity: 0.3;
+    }
+    .logo3{
+      width: 131px;
+      margin: 5px 0;
+      opacity: 0.3;
+    }
+    .logo4 {
+      width: 167px;
+      margin: 5px 35px;
+      opacity: 0.4;
+    }
 }
 
 /*Style for section Contact */
 
 .contactUs {
+  width: 60%;
+  margin: 30px 37.75% 170px 2.25%;
+  height: 390px;
+  background-image: url("https://cdn.pixabay.com/photo/2013/06/20/13/52/nasa-140304_960_720.jpg");
+  opacity: 0.9;
+  .tint {
     width: 100%;
-    height: 840px;
-    
+    height: 390px;
+    margin-top: -30px;
+    background-color: $background-color-circle-team;
+    opacity: 0.9;
+  }
+  h1 {
+    padding-top: 35px;
+    color:$kolor-tekstu;
+    background-image: none;
+    background-color: transparent;
+    font-size: 24px;
+    z-index: 1; 
+    opacity: 1;
+  } 
+  h6 {
+    margin-top: -16px;
+    font-size: 10px;
+  }
+  .row {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /*Style for section  Bottom Footer*/
