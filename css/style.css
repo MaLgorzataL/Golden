@@ -10,6 +10,12 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+@media (max-width: 319px) {
+  html {
+    display: none;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -3484,7 +3490,6 @@ body {
   height: 32px;
   color: #ffffff;
   font-family: "Droid Serif", serif;
-  font-size: 2.7em;
   font-style: italic;
   font-weight: 200;
   letter-spacing: -1px;
@@ -3495,12 +3500,29 @@ body {
   height: 55px;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 4.2em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0px;
   margin-top: -15px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .home .welcome {
+    font-size: 1.7em;
+  }
+  .home .nice {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 993px) {
+  .home .welcome {
+    font-size: 2.7em;
+  }
+  .home .nice {
+    font-size: 4.2em;
+  }
 }
 
 .home .button {
@@ -3596,8 +3618,24 @@ h6 {
   margin: 0 auto;
 }
 
-.box {
-  width: 300px;
+@media (max-width: 1199px) {
+  .box {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .description-Icon {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    width: 300px;
+  }
+  .description-Icon {
+    width: 274px;
+  }
 }
 
 .icon-box {
@@ -3634,8 +3672,7 @@ h6 {
 }
 
 .description-Icon {
-  width: 274px;
-  height: 57px;
+  height: auto;
   color: #777777;
   font-family: "Roboto Slab";
   font-size: 14px;
@@ -3650,7 +3687,7 @@ h6 {
 .portfolio {
   max-width: 1557px;
   width: 62%;
-  height: 680px;
+  height: auto;
   margin: 150px auto;
   background-color: #f7f7f7;
 }
@@ -3664,6 +3701,18 @@ h6 {
 .portfolio h6 {
   font-size: 10px;
   margin: 30px auto;
+}
+
+@media (max-width: 1249px) {
+  .portfolio .row {
+    width: auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .portfolio .row {
+    width: 64%;
+  }
 }
 
 .portfolio .row {
@@ -3714,7 +3763,7 @@ h6 {
 .aboutUs {
   width: 100%;
   max-width: 874px;
-  height: 600px;
+  height: auto;
   margin: -150px auto 100px auto;
 }
 
@@ -3731,51 +3780,57 @@ h6 {
   margin: -25px auto 25px auto;
 }
 
-.aboutUs .col-5 h2 {
+.aboutUs .text h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 700;
   margin: 5px auto -3px auto;
 }
 
-.aboutUs .col-5 h2 span {
+.aboutUs .text h2 span {
   display: block;
 }
 
-.aboutUs .col-5 h2 .second-line {
+.aboutUs .text h2 .second-line {
   font-size: 9px;
 }
 
-.aboutUs .col-5 p {
+.aboutUs .text p {
   font-family: "Roboto Slab";
   font-weight: 400;
   font-size: 10px;
 }
 
-.aboutUs .col-2 h1 {
-  font-size: 9px;
-  font-weight: 900;
-  line-height: 12px;
-  margin: 20px auto;
-  color: #ffffff;
-}
-
-.circle-about {
+.aboutUs .circle-about {
   width: 85px;
   height: 85px;
-  border: 2px solid #f1f1f1;
+  border: 1px solid #f1f1f1;
   background-color: #fed136;
-  color: #ffffff;
   text-align: center;
   border-radius: 50%;
-  margin: 5px auto;
+  margin: 10px;
+  margin-left: -1%;
+  padding: 0 5px 0 -10px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 12px;
+}
+
+@media (max-width: 575px) {
+  .aboutUs .text {
+    width: 60%;
+  }
+  .aboutUs .round-image {
+    width: 40%;
+  }
 }
 
 /*Style for section Our Amazing Team */
 .ourAmazingTeam {
   width: 83%;
   max-width: 1401px;
-  height: 650px;
+  height: auto;
   margin: -10px auto;
   padding: 10px 0;
   background-color: #f9f9f9;

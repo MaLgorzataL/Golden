@@ -8,6 +8,13 @@
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
   }
+
+  @media (max-width: 319px) {
+    html {
+      display: none;
+    }
+  }
+
   
   *,
   *::before,
@@ -4189,7 +4196,6 @@
       height: 32px;
       color: $kolor-tekstu;
       font-family: $tekst-sekcji;
-      font-size: 2.7em;
       font-style: italic;
       font-weight: 200;
       letter-spacing: -1px;
@@ -4199,13 +4205,29 @@
       height: 55px;
       color: $kolor-tekstu;
       font-family: $nice-button;
-      font-size: 4.2em;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0px;
       margin-top: -15px;
       padding-bottom: 50px;
     }
+    @media (max-width: 992px) {
+      .welcome {
+        font-size: 1.7em;
+      }
+      .nice {
+        font-size: 2em;
+      }
+    }
+    @media (min-width: 993px) {
+      .welcome {
+        font-size: 2.7em;
+      }
+      .nice {
+        font-size: 4.2em;
+      }
+    }
+    
     .button {
       width: 240px;
       height: 68px;
@@ -4293,8 +4315,23 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
     margin: 0 auto;
 }
 
-.box {
-  width: 300px;
+@media (max-width: 1199px) {
+  .box {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .description-Icon {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .box {
+    width: 300px;
+  }
+  .description-Icon {
+    width: 274px;
+  }
 }
 
 .icon-box { /* kólko */
@@ -4326,8 +4363,7 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 }
 
 .description-Icon {
-    width: 274px;
-    height: 57px;
+    height: auto;
     color: $kolor-tekstu-sekcji;
     font-family: $opis-ikony;
     font-size: 14px;
@@ -4342,7 +4378,7 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 .portfolio {
   max-width: 1557px; 
   width: 62%;
-  height: 680px;
+  height: auto;
   margin: 150px auto;
   background-color: $background-color-portfolio;
   h1 {
@@ -4353,6 +4389,17 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
   h6 {
     font-size: 10px;
     margin: 30px auto;
+  }
+
+  @media (max-width: 1249px) {
+    .row {
+      width: auto;
+    }
+  }
+  @media (min-width: 1250px) {
+    .row {
+      width: 64%;
+    }
   }
   .row {
     width: 64%;
@@ -4377,7 +4424,7 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
           font-weight: 50;
           margin-top: -27px;
         }
-      }
+      }    
       img {
         width: 160px;
         height: 168px;
@@ -4402,7 +4449,7 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 .aboutUs {
     width: 100%;
     max-width: 874px;
-    height: 600px;
+    height: auto;
     margin: -150px auto 100px auto;
     .row {
       margin-bottom: 17px;
@@ -4414,7 +4461,7 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
       font-size: 10px;
       margin: -25px auto 25px auto;
     }
-    .col-5 {
+    .text {
       h2 {
         font-family: $nice-button;
         font-size: 10px;
@@ -4433,34 +4480,39 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
         font-size: 10px;
       }
     }
-    .col-2 {
-      h1 {
-        font-size: 9px;
-        font-weight: 900;
-        line-height: 12px;
-        margin: 20px auto;
-        color: $kolor-tekstu;
-      }
-    }
-}
 
-.circle-about {
+  .circle-about {
     width: 85px;
     height: 85px;
-    border: 2px solid $kolor-obwodu-kola;
+    border: 1px solid $kolor-obwodu-kola;
     background-color: $kolor-przycisku;
-    color: $kolor-tekstu;
     text-align: center;
     border-radius: 50%;
-    margin: 5px auto;
-}
+    margin: 10px;
+    margin-left: -1%;
+    padding: 0 5px 0 -10px;
+    color: $kolor-tekstu;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 12px; 
+  }
+ 
+  @media (max-width: 575px) {
+    .text {
+      width: 60%
+    }
+    .round-image {
+      width: 40%;
+    }
+  }
 
+}
 /*Style for section Our Amazing Team */
 
 .ourAmazingTeam {
   width: 83%;
   max-width: 1401px;
-  height: 650px; 
+  height: auto;
   margin: -10px auto;
   padding: 10px 0;
   background-color: $background-color-team;
