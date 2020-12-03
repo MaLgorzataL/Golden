@@ -240,19 +240,22 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
 /*Style for section Portfolio */
 
 .portfolio {
-  width: 1557px; 
-  max-width: 100%;
-  height: 1218px;
-  margin: 100px a;
+  max-width: 1557px; 
+  width: 100%;
+  height: 78vw;
+  max-height: 1218px;
   background-color: $background-color-portfolio;
+  padding-bottom: 7.68vw;
   h1 {
-    margin: 120px auto 20px auto;
-    padding-top: 40px;
-    font-size: 21px;
+    margin: 0 auto;
+    padding-top: 6.12vw;
+    line-height: 4.12vw;
+    font-size: 2.5vw;
   }
   h6 {
-    font-size: 10px;
-    margin: 0 auto 30px auto;
+    font-size: 1.2vw;
+    margin: 0 auto 4.4vw auto;
+    letter-spacing: -0.35px;
   }
   .row {
     display: flex;
@@ -261,33 +264,33 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
     justify-content: space-around;
     width: 60vw;
     max-width: 941px;
-    margin: 50px auto -30px auto;
-    padding: 0px;
+    margin: 0 auto 2.98vw auto;
     text-align: center;
     .portfolio-image {
-      width: 18.62vw;
       text-align: center;
-      margin: -5px 0;
       .figcaption {
         background-color: $background-color-portfolio-figcaption;
-        width: 18.62vw;
-        height: 5.5vw;
-        border: solid 1px pink;
-        line-height: 40px;
+        width: 18.10vw;
+        height: 6.62vw;
+        line-height: 3.8vw;
         font-weight: 700;
         text-align: center;
-        font-size: 12px;
+        font-size: 1.1vw;
         font-family: $nice-button;
+        padding-top: 1vw;
+        margin-top: -1vw;
         .second-line {
-          font-size: 8px;
+          font-size: 1vw;
           font-family: $tekst-sekcji;
           font-style: italic;
           font-weight: 50;
-          margin-top: -27px;
+          line-height: 2.23vw;
+          margin-top: -2vw;
+          color: $kolor-tekstu-sekcji;
         }
       }    
       img {
-        width: 18.62vw;
+        width: 18.10vw;
         height: 19vw;
       }
     }
