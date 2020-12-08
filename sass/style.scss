@@ -39,8 +39,10 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 800px;
+    height: 100%;
+    width: 100%;
     max-width: 1815px;
+    padding-top: 130vh;
     text-align: center;
     &::before {
       content: "";
@@ -52,18 +54,25 @@
       background-color: $smoke-screen;
       z-index: 1;
     }
+    .header {
+      position: absolute;
+      width: 100%;
+      margin-top: -121vh;
+      margin-left: 0;
+    }
     img { 
-      margin-top: 44px;
       margin-left: 0%;
     }
+   
     .welcome {
-      height: 32px;
       color: $kolor-tekstu;
       font-family: $tekst-sekcji;
       font-style: italic;
       font-weight: 200;
       letter-spacing: -1px;
-      margin-top: 175px;
+      z-index: 2;
+      margin-top: -88vh;
+      margin-bottom: 6vh;
     }
     .nice {
       height: 55px;
@@ -75,32 +84,40 @@
       margin-top: -15px;
       padding-bottom: 50px;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 891px) {
+      .home {
+        padding-top: 65vh;
+        height: auto;
+      }
+      .header {
+        margin-top: -128vh;
+      }
       .welcome {
-        font-size: 1.7em;
+        font-size: 5.2vw;
+
       }
       .nice {
-        font-size: 2em;
+        font-size:5vw;
       }
     }
-    @media (min-width: 993px) {
+    @media (min-width: 892px) {
       .welcome {
-        font-size: 2.7em;
+        font-size: 3.5vw;
       }
       .nice {
-        font-size: 4.2em;
+        font-size: 5vw;
       }
     }
     
     .button {
       width: 240px;
       height: 68px;
-      margin-top: 474px;
+      //margin-top: 474px;
       background-color: $kolor-przycisku;
       color: $kolor-tekstu;
       font-family: $nice-button;
       text-decoration: none;
-      font-size: 1em;
+      font-size: 1.1em;
       font-weight: 700;
       text-transform: uppercase;
       padding: 20px 50px;
@@ -113,10 +130,6 @@
     z-index: 2;
   }
 
-  /*Style for section Header */
-
-  header {height: 28px;}
-
 .menu {
     height: 10px; 
     margin-left: 32%; 
@@ -128,7 +141,7 @@
       list-style-type: none; 
       li {
         display: inline-block;
-        @media (max-width: 767px) {
+        @media (max-width: 891px) {
           display: block;
           text-align: right;
           margin-right: 3%;
@@ -137,7 +150,7 @@
           color: $kolor-tekstu;
           font-family: $nice-button;
           font-size: 0.845em;
-          font-weight: 400;
+          font-weight: 600;
           line-height: 0.845em; 
           text-transform: uppercase;
           text-decoration: none;
@@ -147,32 +160,39 @@
       }
     }
 }
-  
-/*Style for section Services */
 
-h1 {  /* Wspólne style dla tytułów sekcji i tytułu Service*/
+/*Style for section  */
 
+section {
+
+  h1 {
     margin: 150px auto 0 auto;
     color: $kolor-tytulu-sekcji;
     font-family: $nice-button;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: 700;
     line-height: 75px;
     text-transform: uppercase;
     letter-spacing: -1px;
     text-align: center;
-}
+  }
 
-h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
+  h6 {
     margin: -10px auto 70px auto;
     color: $kolor-tekstu-sekcji;
     font-family: $tekst-sekcji;
-    font-size: 16px;
+    font-size: 1.2vw;
     height: 17px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
+  }
+
+  
 }
+
+  
+/*Style for section Services */
 
 .row {
     width: 73%;
@@ -258,10 +278,6 @@ h6 {  /* Wspólne style dla podtytułów sekcji i podtytułu Service*/
     letter-spacing: -0.35px;
   }
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
     width: 60vw;
     max-width: 941px;
     margin: 0 auto 2.98vw auto;
