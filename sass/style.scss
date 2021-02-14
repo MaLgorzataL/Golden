@@ -280,7 +280,7 @@ section {
     }
     .description-Icon {
       font-size: 1.6vw;
-      line-height: 2vw;
+      line-height: 2.4vw;
     } 
   }
 
@@ -298,10 +298,10 @@ section {
     .icon-box {
       border: 3px solid $kolor-przycisku;
       .laptop {
-        margin-left: -2px;
+        margin-left: 7px;
       }
       .lock {
-        margin-left: 11px;
+        margin-left: 14px;
       }
     }
     .icon-box i { /* ikona */
@@ -331,13 +331,22 @@ section {
   height: auto;
   max-height: 1218px;
   background-color: $background-color-portfolio;
-  padding-bottom: 7.68vw;
+  padding-bottom: 10vh;
+  margin-bottom: 15.55vh;
 
   .row {
     width: 60vw;
     max-width: 941px;
     height: 42vw;
     max-height: 393px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 18.10vw;
+      max-width: 290px;
+      height: 19vw;
+      max-height: 300px;
+    }
   }
 
   @media (min-width: 1557px) {
@@ -350,7 +359,11 @@ section {
       font-size: 16px;
     }
     
+    .row {
+      
+    }
   }
+
   @media (max-width: 1556px) {
    
   h1 {
@@ -364,7 +377,7 @@ section {
     letter-spacing: -0.35px;
   }
   .row {
-    margin: 0 auto 2.98vw auto;
+    margin: 0 auto 4.23vh auto;
     text-align: center;
     .portfolio-image {
       text-align: center;
@@ -388,11 +401,7 @@ section {
           margin-top: -2vw;
           color: $kolor-tekstu-sekcji;
         }
-      }    
-      img {
-        width: 18.10vw;
-        height: 19vw;
-      }
+      }          
     }
   }
 }
@@ -421,7 +430,6 @@ section {
     }
     
     h6 {
-  
       margin: -25px auto 25px auto;
     }
     .text {
@@ -462,65 +470,107 @@ section {
  
   @media (max-width: 575px) {
     .text {
-      width: 60%
+      width: 60%;
     }
     .round-image {
       width: 40%;
     }
   }
-
 }
+
 /*Style for section Our Amazing Team */
 
 .ourAmazingTeam {
-  width: 83%;
+  width: 100%;
   max-width: 1401px;
-  height: auto;
+  height: 58.37vw;
+  max-height: 818px;
   margin: -10px auto;
-  padding: 10px 0;
   background-color: $background-color-team;
-  border: solid 1px blue;
-  h1 {
-    
-    margin: 55px auto;
-  }  
-  h6 {
-    margin: -65px auto 65px auto;
-  } 
-  .row {
-    width: 60%;
+  .row-container {
+    width: 55.14vw;
+    max-width: 780px;
     margin: 0 auto;
-    border: solid 1px blue;
-    .col-xl-4, .col-lg-12, .col-md-8, .col-sm-8, .col-xs-8 {
-      border: solid 1px gray;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      .circle-team {
+        margin: 0 auto;
+        border: solid 3px $kolor-tekstu;
+        border-radius: 50%;
+        background-color: $background-color-circle-team; 
+      }
     }
-    .circle-team {
-      width: 190px;
-      height: 190px;
-      margin: 0 auto;
-      border: solid 3px $kolor-tekstu;
-      border-radius: 50%;
-      background-color: $background-color-circle-team; 
-    }
+  }
+  @media (max-width: 1401px) {
     h1 {
+      padding-top: 8.456vw;
+      font-size: 2.7vw;
+    }  
+    h6 {
+      margin: -1vw auto;
+      font-size: 1.3vw;
+    } 
+    .row-container {
+      margin-top: 6.5vw;
+      .box {
+        .circle-team {
+          width: 16vw;
+          height: 16vw;
+        }
+        .name {
+          font-size: 16px;
+          
+        }
+        .position {
+
+        }
+        .twitter, .facebook, .pinterest, .google {
+          width: 3vw;
+          height: 3vw;
+        }
+        p {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1402px) {
+
+    h1 {
+      margin: 55px auto;
       font-size: 12px;
       line-height: 30px;
-      margin: 0px auto;
-    }
-    h6 {
-      font-size: 14px;
+    }  
+    h6, p {
+      margin: -65px auto 65px auto;
+      font-size: 16px;
       font-weight: 400;
       margin: -5px auto 10px auto;
     }
+    .row-container {
+      width: 780px;
+      margin-top: 2vw;
+      .circle-team {
+        width: 190px;
+        height: 190px;
+      }
+      .twitter, .facebook, .pinterest, .google {
+        width: 41px;
+        height: 41px;
+      }
+    } 
+  }
+    
     a {
       width: 20px;
       height: 16px;
       color: $kolor-tytulu-sekcji;
     }
     .twitter, .facebook, .pinterest, .google {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+      
+      line-height: 41px;
       margin-top: -3px;
       margin-left: -8px;
       padding: 0 10px;
@@ -552,14 +602,13 @@ section {
     .col-5 .pinterest {
       margin-left: -1px;
     }
-  } 
+  
   p {
-    width: 77%;
+    width: 78.5%;
     margin: 40px auto;
     color: $kolor-tekstu-sekcji;
     font-family: $opis-ikony;
-    font-size: 13px;
-    line-height: 20px;
+    line-height: normal;
     font-weight: 400;
     letter-spacing: -0.4px;
   }
